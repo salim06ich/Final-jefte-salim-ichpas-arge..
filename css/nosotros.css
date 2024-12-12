@@ -1,0 +1,306 @@
+    @font-face {
+        font-family: 'Go3v2'; 
+        src: url('../fonts/go3v2.ttf') format('truetype');
+        font-weight: normal; 
+        font-style: normal; 
+    }
+
+    body {
+        font-family: 'Nunito', sans-serif;
+        color: #333333;
+    }
+
+    h1, h2 {
+        font-family: 'Go3v2', sans-serif;
+        color: #D4AF37;
+    }
+
+    .container-text-white {
+        font-family: 'Go3v2', sans-serif;
+    }
+
+    .text-sakura {
+        color: #FFC1CC; 
+        font-family: 'Go3v2', sans-serif;
+    }
+
+    .nav-link {
+        position: relative;
+        text-decoration: none; 
+    }
+
+    .text-whitee{
+        font-family: 'Go3v2', sans-serif; 
+        font-size: 30px;
+    }
+
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #FFC1CC; 
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%; 
+    }
+
+    .contenido {
+        justify-content: flex-start; 
+    }
+
+    .bg-sakura {
+        background-color: #FFC1CC; 
+    }
+
+    a i {
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+        padding: 8px;
+    }
+
+    a:hover i {
+        color: #D4AF37; 
+    }
+
+    a {
+        color: #1E3441; 
+        text-decoration: none;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    a:hover {
+        color: #D4AF37; 
+        border-bottom: 2px solid #D4AF37; 
+    }
+
+
+
+    .text-dorado {
+        color: #D4AF37;
+        font-size: 2.2rem;
+    }
+
+
+    .display-3{
+        color: #D4AF37
+    }
+
+    /* Botones con transiciones */
+    .btn-hanami {
+        background-color: #D72638; 
+    color: #F5F5F5;
+    border: 2px solid #D4AF37; 
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    }
+    
+    .btn-hanami:hover {
+        background-color: #D4505D; 
+        color: #F5F5F5;
+        border-color: #D4AF37; 
+    }
+    
+    
+
+    /* Estilos generales para la sección */
+    .cocineros {
+        background: linear-gradient(135deg, #1E3441, #4A6572);
+        color: #fff;
+    }
+
+    /* Estilo para las tarjetas de los cocineros */
+    .cocineros .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efecto hover para las tarjetas */
+    .cocineros .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Padding dentro de las tarjetas */
+    .cocineros .card-body {
+        padding: 2rem;
+    }
+
+    /* Estilo para el título de cada cocinero */
+    .cocineros h5.card-title {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFC1CC;
+    }
+
+    /* Estilo para el texto de las descripciones de los cocineros */
+    .cocineros p.card-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        font-style: italic;
+    }
+
+    /* Estilos para los controles del carrusel */
+    .cocineros .carousel-control-prev-icon,
+    .cocineros .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    /* Estilos para los indicadores del carrusel (los puntos) */
+    .cocineros .carousel-indicators [data-bs-target] {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transition: transform 0.3s ease;
+    }
+
+
+    .video-section {
+        position: relative;
+        background-color: #1E3441; /* Fondo oscuro */
+        padding: 50px 0;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+
+    .valores-filosofia {
+        background-color: #1E3441 ;
+        color: #fff;
+    }
+
+    .valores-filosofia .text-dorado {
+        color: #D4AF37  ;
+    }
+
+    .valores-filosofia .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .valores-filosofia .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .valores-filosofia .icon {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        padding: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .valores-filosofia .icon:hover {
+        background-color: rgba(255, 215, 0, 0.2);
+    }
+    /* Footer General */
+    .footer {
+        background-color: #2c3e50; /* Fondo oscuro */
+        color: #ecf0f1; /* Texto claro */
+        padding: 40px 20px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-logo,
+    .footer-links,
+    .footer-social {
+        flex: 1 1 30%; /* Divide las secciones proporcionalmente */
+        margin: 10px;
+    }
+    
+    .footer-logo h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-logo p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .footer-links h3,
+    .footer-social h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-links li {
+        margin: 5px 0;
+    }
+    
+    .footer-links a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-size: 14px;
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline;
+        color: #1abc9c; /* Color acento */
+    }
+    
+    .footer-social a {
+        display: inline-block;
+        margin: 5px 10px 0 0;
+        text-decoration: none;
+        color: #ecf0f1;
+        font-size: 14px;
+    }
+    
+    .footer-social a:hover {
+        color: #3498db; /* Color acento */
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        border-top: 1px solid #34495e; /* Línea separadora */
+        padding-top: 10px;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }
+    
+
